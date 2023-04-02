@@ -6,12 +6,12 @@ metadata:
     app: demo
   name: demo-service
 spec:
-  selector:
-    app: demo
   ports:
   - port: 8080
     protocol: TCP
     targetPort: 8080
+  selector:
+    app: demo
   Type: NodePort
 status: 
   loadBalancer: {}
